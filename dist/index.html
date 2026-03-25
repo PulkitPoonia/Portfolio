@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulkit Poonia | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Pulkit Poonia — Full Stack Developer specializing in React.js, Node.js, Express.js, MongoDB. Building scalable web apps with real-time systems.">
+    <meta name="keywords" content="Pulkit Poonia, Full Stack Developer, React, Node.js, MongoDB, Portfolio">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" crossorigin href="/assets/index-Dl-dGYbl.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PP<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="badge"><span class="badge-dot"></span> Open to Opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Pulkit Poonia</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="role-text" id="roleText">Full Stack Developer</span>
+                    <span class="role-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    I craft scalable, high-performance web applications with a focus on real-time systems, automation, and seamless user experiences.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-lucide="folder-open"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i data-lucide="send"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/PulkitPoonia" target="_blank" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/pulkit-poonia-2a9b3b226" target="_blank" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:pulkitpoonia7@gmail.com" title="Email"><i data-lucide="mail"></i></a>
+                    <a href="tel:+919571299796" title="Phone"><i data-lucide="phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-code-block glass">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-filename">pulkit.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Pulkit Poonia"</span>,
+  <span class="key">role</span>: <span class="str">"Full Stack Dev"</span>,
+  <span class="key">skills</span>: [<span class="str">"React"</span>, <span class="str">"Node"</span>,
+    <span class="str">"MongoDB"</span>, <span class="str">"Express"</span>],
+  <span class="key">passion</span>: <span class="str">"Building things"</span>,
+  <span class="key">coffee</span>: <span class="bool">true</span> ☕
+};</code></pre>
+                </div>
+                <div class="shape-blob"></div>
+                <div class="shape-blob-2"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">About Me</span>
+                    <h2 class="section-title">Turning Vision Into <span class="gradient-text">Reality</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a Full Stack Developer with hands-on experience in designing and developing scalable web applications using <strong>React.js, Node.js, Express.js, and MongoDB</strong>. I have a strong understanding of REST API architecture, real-time systems, and database management.
+                        </p>
+                        <p>
+                            Experienced in building end-to-end applications including dashboards, automation tools, and AI-based systems. I've developed projects involving chat systems, social media automation, and machine learning models with a focus on performance, usability, and scalability.
+                        </p>
+                        <p>
+                            My journey in tech is driven by a passion for solving complex problems — whether it's optimizing backend performance, implementing real-time features with Socket.io, or crafting pixel-perfect, responsive user interfaces.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-card glass">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Pilani, Rajasthan</span>
+                            </div>
+                        </div>
+                        <div class="highlight-card glass">
+                            <i data-lucide="briefcase"></i>
+                            <div>
+                                <strong>Current Role</strong>
+                                <span>Software Developer @ OnePixel Soft</span>
+                            </div>
+                        </div>
+                        <div class="highlight-card glass">
+                            <i data-lucide="graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>B.Tech CSE — BKBIET (7.5 CGPA)</span>
+                            </div>
+                        </div>
+                        <div class="highlight-card glass">
+                            <i data-lucide="languages"></i>
+                            <div>
+                                <strong>Languages</strong>
+                                <span>C++, Python, JavaScript, Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item glass">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Production Projects</span>
+                    </div>
+                    <div class="stat-item glass">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">LeetCode Problems</span>
+                    </div>
+                    <div class="stat-item glass">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Industry Experiences</span>
+                    </div>
+                    <div class="stat-item glass">
+                        <span class="stat-number">SIH'23</span>
+                        <span class="stat-label">Hackathon Finalist</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Do Section -->
+        <section class="section section-alt" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Services</span>
+                    <h2 class="section-title">What I <span class="gradient-text">Do</span></h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass">
+                        <div class="service-icon"><i data-lucide="layout-dashboard"></i></div>
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive, interactive user interfaces with React.js, modern CSS, and smooth animations that delight users.</p>
+                    </div>
+                    <div class="service-card glass">
+                        <div class="service-icon"><i data-lucide="server"></i></div>
+                        <h3>Backend Development</h3>
+                        <p>Designing scalable REST APIs and server architectures with Node.js. Implementing real-time features using Socket.io.</p>
+                    </div>
+                    <div class="service-card glass">
+                        <div class="service-icon"><i data-lucide="database"></i></div>
+                        <h3>Database Design</h3>
+                        <p>Structuring efficient database schemas with MongoDB and MySQL. Optimizing queries for high-performance applications.</p>
+                    </div>
+                    <div class="service-card glass">
+                        <div class="service-icon"><i data-lucide="bot"></i></div>
+                        <h3>AI & Automation</h3>
+                        <p>Building intelligent chatbots with NLP, automating workflows, and integrating machine learning models into web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Experience</span>
+                    <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Nov 2025 — Present</div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <span class="exp-type">Full-Time</span>
+                            </div>
+                            <span class="company">OnePixel Soft Pvt. Ltd.</span>
+                            <ul>
+                                <li>Developing full-stack applications using React.js, Node.js, Express.js, MongoDB</li>
+                                <li>Designing scalable REST APIs and optimizing backend performance</li>
+                                <li>Building automation workflows with WhatsApp API integration</li>
+                                <li>Working on real-time features using Socket.io and WebSockets</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Aug 2024 — Dec 2024</div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3>Web Development Intern</h3>
+                                <span class="exp-type">Internship</span>
+                            </div>
+                            <span class="company">Seldom India Technologies</span>
+                            <ul>
+                                <li>Built responsive web applications using React.js, HTML, CSS, JavaScript</li>
+                                <li>Integrated backend APIs and improved application efficiency</li>
+                                <li>Collaborated with the team on UI/UX improvements and code reviews</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>React</span><span>JavaScript</span><span>REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 2024 — July 2024</div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3>Web Designing Trainee</h3>
+                                <span class="exp-type">Training</span>
+                            </div>
+                            <span class="company">Mega Flow</span>
+                            <ul>
+                                <li>Designed responsive UI using HTML, CSS, JavaScript, Bootstrap</li>
+                                <li>Learned modern design principles and responsive layout techniques</li>
+                            </ul>
+                            <div class="exp-tags">
+                                <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Portfolio</span>
+                    <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Social Media Manager -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="/assets/social-media-manager-BwuuUpdp.png" alt="Social Media Manager Dashboard" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Social Media Manager</h3>
+                                <span class="project-badge">Full Stack</span>
+                            </div>
+                            <p>A comprehensive social media management platform built for agencies and businesses. Features include automated post scheduling with a visual content calendar, client approval workflows via WhatsApp integration, real-time analytics dashboard tracking engagement and reach, and multi-client account management with role-based access control. The system automates the entire content lifecycle from creation to publishing across multiple platforms.</p>
+                            <div class="project-tags">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Express.js</span>
+                                <span>WhatsApp API</span>
+                                <span>Socket.io</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Task Chat App -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="/assets/task-chat-app-BsEH66ye.png" alt="Task Chat Application" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Task Chat Application</h3>
+                                <span class="project-badge">Real-Time</span>
+                            </div>
+                            <p>A real-time collaborative workspace combining instant messaging with project task management. Users can create team channels, send messages with real-time delivery powered by Socket.io, assign and track tasks with priority levels and due dates, and receive push notifications for mentions and updates. Built with a responsive design that works seamlessly across desktop and mobile devices.</p>
+                            <div class="project-tags">
+                                <span>Socket.io</span>
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>WebSockets</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AI Support Agent -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="/assets/ai-chatbot-BY7izt14.png" alt="AI-Powered Support Agent" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>AI-Powered Support Agent</h3>
+                                <span class="project-badge">AI / NLP</span>
+                            </div>
+                            <p>An intelligent customer support chatbot leveraging Natural Language Processing for automated query resolution. The system uses spaCy for entity extraction and scikit-learn for intent classification, achieving high accuracy in understanding user queries. Features include context-aware responses, conversation history tracking, and seamless escalation to human agents. Reduced average response time by ~40% compared to traditional support workflows.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>spaCy</span>
+                                <span>scikit-learn</span>
+                                <span>NLP</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Web Scraper -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="/assets/web-scraper-ByB0u9JA.png" alt="Web Scraper Dashboard" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Web Scraper</h3>
+                                <span class="project-badge">Automation</span>
+                            </div>
+                            <p>An automated data extraction tool designed for collecting structured data from websites at scale. Built using Selenium for dynamic page rendering and BeautifulSoup for HTML parsing. Features include headless browser mode for server deployment, configurable extraction rules, data export to CSV/JSON formats, proxy rotation, and request throttling to avoid rate limiting. Handles pagination and JavaScript-rendered content automatically.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Selenium</span>
+                                <span>BeautifulSoup</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diabetes Prediction -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="/assets/diabetes-prediction-B0xlHFdF.png" alt="Diabetes Prediction System" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header">
+                                <h3>Diabetes Prediction System</h3>
+                                <span class="project-badge">Machine Learning</span>
+                            </div>
+                            <p>A machine learning-based health prediction system that analyzes patient data to assess diabetes risk with ~85% accuracy. The model was trained on clinical datasets using supervised learning techniques including Logistic Regression, Random Forest, and SVM. Implemented comprehensive data preprocessing with feature scaling, handling of missing values, and exploratory data analysis. Includes a confusion matrix visualization and feature importance analysis.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>scikit-learn</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Expertise</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="skills-category glass">
+                        <div class="skills-cat-header">
+                            <i data-lucide="palette"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill">React.js</div>
+                            <div class="skill-pill">HTML5</div>
+                            <div class="skill-pill">CSS3</div>
+                            <div class="skill-pill">JavaScript (ES6+)</div>
+                            <div class="skill-pill">Bootstrap</div>
+                            <div class="skill-pill">Responsive Design</div>
+                        </div>
+                    </div>
+                    <div class="skills-category glass">
+                        <div class="skills-cat-header">
+                            <i data-lucide="server"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill">Node.js</div>
+                            <div class="skill-pill">Express.js</div>
+                            <div class="skill-pill">REST APIs</div>
+                            <div class="skill-pill">Socket.io</div>
+                            <div class="skill-pill">Authentication</div>
+                        </div>
+                    </div>
+                    <div class="skills-category glass">
+                        <div class="skills-cat-header">
+                            <i data-lucide="database"></i>
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill">MongoDB</div>
+                            <div class="skill-pill">MySQL</div>
+                            <div class="skill-pill">Mongoose ODM</div>
+                        </div>
+                    </div>
+                    <div class="skills-category glass">
+                        <div class="skills-cat-header">
+                            <i data-lucide="code-2"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill">C++</div>
+                            <div class="skill-pill">Python</div>
+                            <div class="skill-pill">JavaScript</div>
+                            <div class="skill-pill">Java</div>
+                        </div>
+                    </div>
+                    <div class="skills-category glass">
+                        <div class="skills-cat-header">
+                            <i data-lucide="wrench"></i>
+                            <h3>Tools & DevOps</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill">Git & GitHub</div>
+                            <div class="skill-pill">Docker</div>
+                            <div class="skill-pill">Postman</div>
+                            <div class="skill-pill">VS Code</div>
+                            <div class="skill-pill">Linux</div>
+                        </div>
+                    </div>
+                    <div class="skills-category glass">
+                        <div class="skills-cat-header">
+                            <i data-lucide="brain"></i>
+                            <h3>Core Concepts</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-pill">DSA</div>
+                            <div class="skill-pill">REST APIs</div>
+                            <div class="skill-pill">Machine Learning</div>
+                            <div class="skill-pill">OOP</div>
+                            <div class="skill-pill">Agile</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements -->
+        <section class="section section-alt" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Background</span>
+                    <h2 class="section-title">Education & <span class="gradient-text">Achievements</span></h2>
+                </div>
+                <div class="edu-achieve-grid">
+                    <div class="edu-card glass">
+                        <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+                        <h3>B.Tech in Computer Science</h3>
+                        <p class="institute">B.K. Birla Institute of Engineering & Technology</p>
+                        <p class="period">2021 — 2025</p>
+                        <div class="cgpa-badge">CGPA: 7.5</div>
+                        <p class="edu-detail">Relevant Coursework: Data Structures & Algorithms, Database Management, Computer Networks, Operating Systems, Machine Learning</p>
+                    </div>
+                    <div class="achievements-block">
+                        <div class="achievement-card glass">
+                            <div class="achieve-icon"><i data-lucide="trophy"></i></div>
+                            <div>
+                                <h4>Smart India Hackathon 2023 — Finalist</h4>
+                                <p>Selected among top teams nationally. Built an innovative solution addressing a government problem statement.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card glass">
+                            <div class="achieve-icon"><i data-lucide="code-2"></i></div>
+                            <div>
+                                <h4>200+ Problems Solved on LeetCode</h4>
+                                <p>Consistently practicing Data Structures & Algorithms with a focus on arrays, trees, graphs, and dynamic programming.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card glass">
+                            <div class="achieve-icon"><i data-lucide="zap"></i></div>
+                            <div>
+                                <h4>AI Chatbot — 40% Faster Response</h4>
+                                <p>Built an NLP-powered support agent that reduced average response time by ~40% using intent classification.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <span class="section-badge">Contact</span>
+                        <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+                        <p class="contact-desc">Have a project in mind, want to collaborate, or just say hi? I'd love to hear from you. My inbox is always open.</p>
+                        <div class="contact-details">
+                            <a href="mailto:pulkitpoonia7@gmail.com" class="contact-method">
+                                <div class="contact-icon glass"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>pulkitpoonia7@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+919571299796" class="contact-method">
+                                <div class="contact-icon glass"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <span>+91 9571299796</span>
+                                </div>
+                            </a>
+                            <div class="contact-method">
+                                <div class="contact-icon glass"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Pilani, Rajasthan, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-right glass">
+                        <h3>Quick Connect</h3>
+                        <p>Find me on these platforms:</p>
+                        <div class="contact-socials">
+                            <a href="https://github.com/PulkitPoonia" target="_blank" class="social-link glass">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/pulkit-poonia-2a9b3b226" target="_blank" class="social-link glass">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:pulkitpoonia7@gmail.com" class="social-link glass">
+                                <i data-lucide="mail"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="logo">PP<span>.</span></a>
+            <p>Designed & Built by Pulkit Poonia</p>
+            <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
