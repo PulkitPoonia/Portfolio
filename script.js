@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Lucide icons
+
     if (window.lucide) {
         lucide.createIcons();
     }
 
-    // Custom Cursor Glow
+  
     const cursor = document.querySelector('.cursor-glow');
     if (cursor) {
         document.addEventListener('mousemove', (e) => {
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // GSAP Scroll Animations
+    
     gsap.registerPlugin(ScrollTrigger);
 
-    // Hero Section Entrance
+   
     const heroTl = gsap.timeline({ defaults: { ease: 'power4.out' } });
     heroTl
         .from('.badge', { y: 20, opacity: 0, duration: 0.6 })
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .from('.hero-socials', { y: 10, opacity: 0, duration: 0.5 }, '-=0.2')
         .from('.hero-code-block', { x: 60, opacity: 0, duration: 1, ease: 'power3.out' }, '-=0.8');
 
-    // Typing effect for roles
+   
     const roles = ['Full Stack Developer', 'React.js Developer', 'Node.js Engineer', 'Problem Solver'];
     let roleIndex = 0;
     const roleText = document.getElementById('roleText');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2500);
     }
 
-    // Section Headers Reveal
+  
     document.querySelectorAll('.section').forEach(section => {
         const header = section.querySelector('.section-header');
         if (header) {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // About Highlights
+    
     gsap.utils.toArray('.highlight-card').forEach((card, i) => {
         gsap.from(card, {
             scrollTrigger: { trigger: card, start: 'top 90%' },
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Stats Counter Animation
+
     document.querySelectorAll('.stat-item').forEach(item => {
         gsap.from(item, {
             scrollTrigger: { trigger: item, start: 'top 90%' },
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Services Cards
     gsap.utils.toArray('.service-card').forEach((card, i) => {
         gsap.from(card, {
             scrollTrigger: { trigger: '.services-grid', start: 'top 85%' },
@@ -80,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Timeline Items
     document.querySelectorAll('.timeline-item').forEach(item => {
         gsap.from(item, {
             scrollTrigger: { trigger: item, start: 'top 88%', toggleActions: 'play none none none' },
@@ -88,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Project Cards — use fromTo to guarantee end state is visible
+ 
     const projectCards = document.querySelectorAll('.project-card');
     if (projectCards.length > 0) {
         gsap.fromTo(projectCards,
@@ -100,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    // Skill Pills — use fromTo
+    
     const skillPills = document.querySelectorAll('.skill-pill');
     if (skillPills.length > 0) {
         gsap.fromTo(skillPills,
@@ -112,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    // Safety fallback: ensure all animated elements become visible after 3s
+   
     setTimeout(() => {
         document.querySelectorAll('.project-card, .skill-pill, .service-card, .timeline-item, .highlight-card, .stat-item, .achievement-card').forEach(el => {
             el.style.opacity = '1';
@@ -120,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 3000);
 
-    // Achievement Cards
+   
     gsap.utils.toArray('.achievement-card').forEach((card, i) => {
         gsap.from(card, {
             scrollTrigger: { trigger: card, start: 'top 90%' },
@@ -128,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Contact Section
     gsap.from('.contact-left', {
         scrollTrigger: { trigger: '.contact-wrapper', start: 'top 85%' },
         x: -40, opacity: 0, duration: 0.8
@@ -148,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Nav Toggle
+   
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
 
@@ -168,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Active nav link highlight
+    
     const sections = document.querySelectorAll('section[id]');
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY + 100;
